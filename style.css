@@ -1,0 +1,232 @@
+footer {
+  height: 20px;
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 0 0px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #111;
+  background: -moz-linear-gradient(top, rgba(43,42,48,1) 0%, rgba(0,1,17,1) 50%, rgba(43,42,48,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a30', endColorstr='#2b2a30',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h2 {
+  display: inline-block;
+  color: #fff;
+  padding: 0 40px 20px;
+  border-bottom: 2px solid #fff;
+}
+
+p {
+  border: 0 solid black;
+  color: #fff;
+  text-align: left;
+  padding: 0 5% 10% 5%;
+  /* text-indent: 20px; */
+}
+
+.top {
+  flex: 1 6 100%;
+  width: 100%;
+  height: 28vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("http://i64.tinypic.com/j7swhf.jpg");
+  background-position: 0 20%;
+}
+
+.linkBar {
+  flex: 1 6 100%;
+  width: 100%;
+  height: 4vh;
+  position: fixed;
+  top: 28vh;
+  left: 0;
+  z-index: 1;
+  /* background-color: #111; */
+  background: -moz-linear-gradient(top, rgba(43,42,48,1) 0%, rgba(0,1,17,1) 50%, rgba(43,42,48,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a30', endColorstr='#2b2a30',GradientType=0 ); /* IE6-9 */
+}
+
+/* img {
+  height: auto;
+  width: 60%;
+} */
+
+/* .title {
+  background-color: rgba(146, 154, 186, 0.3);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  margin: 20px;
+} */
+
+/* Define the flexbox layout of the .main part, which includes the 3 sections */
+.main {
+  width: 100vh;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+/* Main > [...] aren't doing anything right now */
+/* Defining the flexbox layout of the left section */
+.main > .leftSidenav {
+  border: 0 solid #85c272;
+  flex: 1 6 10%;
+  order: 1;
+}
+
+/* Defining the flexbox layout of the middle section */
+.main > .middleSidenav {
+  border: 0 solid #52903e;
+  flex: 1 6 10%;
+  order: 2;
+}
+
+/* Defining the flexbox layout of the right section */
+.main > .rightSidenav {
+  border: 0 solid #29491f;
+  flex: 1 6 10%;
+  order: 3;
+}
+
+/* The left navigation menu */
+.leftSidenav {
+    height: 200%; /* 100% Full-height */
+    width: 80%; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    top: 32vh;
+    left: 0;
+    background-color: #78928D;
+    padding-top: 5%;
+    transition: 4s;
+}
+
+/* The middle navigation menu */
+.middleSidenav {
+    height: 200%; /* 100% Full-height */
+    width: 80%; /* 0 width - change this with JavaScript */
+    position: absolute; /* fixed > Stay in place */
+    top: 32vh;
+    left: 33%;
+    background-color: #5b6e6a;
+    padding-top: 5%;
+    transition: 4s;
+  }
+
+/* The right navigation menu */
+.rightSidenav {
+    height: 200%; /* 100% Full-height */
+    width: 80%; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    top: 32vh;
+    left: 67%;
+    background-color: #4a5956;
+    padding-top: 5%;
+    transition: 4s;
+}
+
+.contentMiddle {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+
+.linkBar {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
+}
+
+.fcc, .codepen, .github, .email, .codewars, .linkedin, .twitter {
+  border-radius: 20px 20px 20px 20px;
+  padding: 1px;
+  margin: 2px;
+  height: 3vh;
+  width: 3vh;
+}
+
+.fcc {
+  background-image: url("https://avatars2.githubusercontent.com/u/9892522?v=3&s=400");
+  background-size: 95% auto;
+  background-position: 60% 50%;
+}
+
+.codepen {
+  background-color: #fff;
+  background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
+  background-size: 140% auto;
+  background-position: 50% 50%;
+}
+
+.github {
+  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+  background-size: 120% auto;
+  background-position: 50% 50%;
+}
+
+.email {
+  background-image: url("http://www.freeiconspng.com/uploads/email-icon--clipart-best-22.png");
+  background-size: 145% auto;
+  background-position: 50% 50%;
+}
+
+.codewars {
+  background-image: url("https://avatars0.githubusercontent.com/u/5387632?v=3&s=280");
+  background-size: 125% auto;
+  background-position: 50% 50%;
+}
+
+.linkedin {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png");
+  background-size: 90% auto;
+  background-position: 52% 52%;
+}
+
+.twitter {
+  background-color: #fff;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png");
+  background-size: 80% auto;
+  background-position: 52% 52%;
+  background-repeat: no-repeat;
+}
+
+#leftSidenav img {
+  border-radius: 20px 0px 20px 0px;
+  border: 0px solid blue;
+  height: 40vh;
+  width: auto;
+  margin: 0 5% 5% 5%;
+  float: left;
+  box-shadow: 2px 2px 5px #111;
+}
+
+#titleLeft, #titleMiddle, #titleRight {
+  border-bottom: 0 solid #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 4s;
+}
