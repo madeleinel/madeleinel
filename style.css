@@ -1,3 +1,7 @@
+/* header {
+  background-color: #9774f6;
+} */
+
 footer {
   height: 20px;
   width: 100%;
@@ -18,6 +22,9 @@ footer {
 
 body {
   font-family: "Raleway", sans-serif;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
   width: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -28,6 +35,13 @@ h2 {
   color: #fff;
   padding: 0 40px 20px;
   border-bottom: 2px solid #fff;
+}
+
+h3 {
+  border: 1px solid blue;
+  display: inline-block;
+  padding: 0 0 0 10%;
+  text-align: center;
 }
 
 p {
@@ -65,21 +79,6 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a30', endColorstr='#2b2a30',GradientType=0 ); /* IE6-9 */
 }
 
-/* img {
-  height: auto;
-  width: 60%;
-} */
-
-/* .title {
-  background-color: rgba(146, 154, 186, 0.3);
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70%;
-  margin: 20px;
-} */
-
 /* Define the flexbox layout of the .main part, which includes the 3 sections */
 .main {
   width: 100vh;
@@ -112,7 +111,7 @@ p {
 
 /* The left navigation menu */
 .leftSidenav {
-    height: 200%; /* 100% Full-height */
+    height: 500%;
     width: 80%; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     top: 32vh;
@@ -124,7 +123,7 @@ p {
 
 /* The middle navigation menu */
 .middleSidenav {
-    height: 200%; /* 100% Full-height */
+    height: 500%;
     width: 80%; /* 0 width - change this with JavaScript */
     position: absolute; /* fixed > Stay in place */
     top: 32vh;
@@ -136,7 +135,7 @@ p {
 
 /* The right navigation menu */
 .rightSidenav {
-    height: 200%; /* 100% Full-height */
+    height: 500%;
     width: 80%; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     top: 32vh;
@@ -146,12 +145,6 @@ p {
     transition: 4s;
 }
 
-.contentMiddle {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: nowrap;
-}
-
 .linkBar {
   display: inline-flex;
   flex-flow: row wrap;
@@ -159,6 +152,7 @@ p {
   align-items: stretch;
   align-content: space-around;
 }
+
 
 .fcc, .codepen, .github, .email, .codewars, .linkedin, .twitter {
   border-radius: 20px 20px 20px 20px;
@@ -224,9 +218,98 @@ p {
 }
 
 #titleLeft, #titleMiddle, #titleRight {
-  border-bottom: 0 solid #fff;
   position: relative;
   top: 0;
   left: 0;
   transition: 4s;
+}
+
+.timeline {
+  border: 0 solid black;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+
+.content {
+  border: 1px solid red;
+  color: #fff;
+  display: flex;
+  flexflow: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 200px;
+  margin: 0 5% 0 5%;
+}
+
+.timeline .image {
+  border: 1px solid #000;
+  text-align: left;
+  padding: 0px 0px 40px 0px;
+}
+
+.timeline .text {
+  border: 1px solid purple;
+  display: inline-block;
+  width: auto;
+}
+
+.city {
+  border: 2px solid #fff;
+  border-radius: 125px 25px 125px 25px;
+  padding: 20px;
+  margin: 0 20px 10px 0;
+  background-color: #8498ad;
+  height: 200px;
+  width: 200px;
+  box-shadow: 2px 2px 5px #111;
+  background-repeat: no-repeat;
+}
+
+#london2 {
+  background-image: url("http://cdn.ek.aero/english/images/London_tcm233-2438088.jpg");
+  background-size: 280% auto;
+  background-position: 14% 50%;
+}
+
+#brighton {
+  background-image: url("http://www.samedaycouriers.org/wp-content/uploads/2016/02/brighton1.jpg");
+  /*image by */
+  background-size: 160% auto;
+  background-position: 50% 50%;
+}
+
+#london1 {
+  background-image: url("http://www.alumni.ucdavis.edu/local_resources/images/benefits/travel/2017/london-and-environs/london%202.jpg");
+  /*image by */
+  background-size: 150% auto;
+  background-position: 45% 50%;
+}
+
+#linkoping {
+  background-image: url("http://www.student.liu.se/exchange/what-s-on-in-norrkoping/1.487559/nkpg.jpg");
+  /*image by */
+  background-size: 200% auto;
+  background-position: 40% 100%;
+}
+
+#stockholm2 {
+  background-image: url("http://blog.secretescapes.com/wp-content/uploads/2015/07/stockholm.jpg");
+  /*image by */
+  background-size: 150% auto;
+  background-position: 50% 50%;
+}
+
+#cincinnati {
+  background-image: url("http://s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg?1427320933");
+  /*image by */
+  background-size: 240% auto;
+  background-position: 50% 50%;
+}
+
+#stockholm1 {
+  background-image: url("http://www.whitecase.com/sites/whitecase/files/images/locations/Stockholm_Sweden_Tablet_1920x960.jpg");
+  /*image by White & Case Stockholm */
+  background-size: 200% auto;
+  background-position: 50% 50%;
 }
