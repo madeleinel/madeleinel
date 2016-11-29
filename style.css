@@ -31,7 +31,6 @@ h2 {
 }
 
 h3 {
-  border: 1px solid blue;
   display: inline-block;
   padding: 0 0 0 10%;
   text-align: center;
@@ -43,7 +42,6 @@ h3 {
 }
 
 p {
-  border: 0 solid black;
   color: #fff;
   text-align: left;
   padding: 0 5% 10% 5%;
@@ -66,7 +64,6 @@ p {
 }
 
 #title {
-  border: 0 solid white;
   color: #fff;
   font-size: 36px;
   letter-spacing: 2px;
@@ -102,21 +99,18 @@ p {
 
 /* Defining the flexbox layout of the left section */
 .main > .leftSidenav {
-  border: 0 solid #85c272;
   flex: 1 6 10%;
   order: 1;
 }
 
 /* Defining the flexbox layout of the middle section */
 .main > .middleSidenav {
-  border: 0 solid #52903e;
   flex: 1 6 10%;
   order: 2;
 }
 
 /* Defining the flexbox layout of the right section */
 .main > .rightSidenav {
-  border: 0 solid #29491f;
   flex: 1 6 10%;
   order: 3;
 }
@@ -188,7 +182,6 @@ p {
 }
 
 .email {
-  border: 0 solid white;
   background-image: url("http://www.freeiconspng.com/uploads/email-icon--clipart-best-22.png");
   background-size: 145% auto;
   background-position: 50% 50%;
@@ -222,7 +215,6 @@ p {
 
 #leftSidenav img {
   border-radius: 20px 0px 20px 0px;
-  border: 0px solid blue;
   height: 40vh;
   width: auto;
   margin: 0 5% 5% 5%;
@@ -238,14 +230,12 @@ p {
 }
 
 .timeline {
-  border: 0 solid black;
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
 }
 
 .timeline .content {
-  border: 1px solid red;
   color: #fff;
   display: flex;
   flex-flow: row;
@@ -261,7 +251,6 @@ p {
 }
 
 .timeline .text {
-  border: 2px solid purple;
   display: inline-block;
   width: auto;
 }
@@ -330,11 +319,9 @@ p {
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
-  border: 0px solid black;
 }
 
 .community .content {
-  border: 1px solid red;
   color: #fff;
   display: flex-inline;
   flex-flow: column;
@@ -344,22 +331,22 @@ p {
 }
 
 .community .image {
-  padding: 0px 0px 0px 0px;
-  border: 0px solid blue;
   width: 100%;
-  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .community .text {
-  border: 1px solid white;
+  border-bottom: 1px solid white;
   display: inline-block;
   width: 100%;
   height: 60%;
 }
 
+.community p {
+  padding: 40px 0 40px 0px;
+}
 
 .imageCodebar {
   border-radius: 25vh;
@@ -373,20 +360,58 @@ p {
   padding: 20px;
 }
 
-#rightSidenav img {
-  border: 2px solid white;
+.imageNodeGirls {
   border-radius: 25vh;
   box-shadow: 2px 2px 5px #111;
   width: 40vh;
   height: 40vh;
+  background-image: url("https://avatars2.githubusercontent.com/u/13981928?v=3&s=200");
+  background-color: #fff;
+  background-size: 90%;
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.imageFac {
+  border-radius: 25vh;
+  box-shadow: 2px 2px 5px #111;
+  width: 40vh;
+  height: 40vh;
+  background-image: url("https://pbs.twimg.com/profile_images/534123785817829376/UE8T_TQF_400x400.png");
+  background-color: #fff;
+  background-size: 70%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.imageCfg {
+  border-radius: 25vh;
+  box-shadow: 2px 2px 5px #111;
+  width: 40vh;
+  height: 40vh;
+  background-image: url("https://pbs.twimg.com/profile_images/572786721922629632/XI4-Cw-n_400x400.png");
+  background-color: #fff;
+  background-size: 80%;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+#rightSidenav img {
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: 2px 2px 5px #111;
+  /* border: 2px solid white;
+  border-radius: 50vh; */
+  width: 40%;
+  height: 40%;
   margin: 0 5% 5% 5%;
   float: right;
 }
 
 .org {
-  border: 0px solid green;
   text-align: left;
-  padding: 0px 0px 40px 0px;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
