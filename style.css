@@ -1,7 +1,3 @@
-/* header {
-  background-color: #9774f6;
-} */
-
 footer {
   height: 20px;
   width: 100%;
@@ -13,18 +9,15 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: #111;
-  background: -moz-linear-gradient(top, rgba(43,42,48,1) 0%, rgba(0,1,17,1) 50%, rgba(43,42,48,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a30', endColorstr='#2b2a30',GradientType=0 ); /* IE6-9 */
+  background-color: rgba(17, 1, 0, 0.9);
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   width: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -49,34 +42,49 @@ p {
   color: #fff;
   text-align: left;
   padding: 0 5% 10% 5%;
-  /* text-indent: 20px; */
 }
 
 .top {
   flex: 1 6 100%;
   width: 100%;
-  height: 28vh;
+  height: 20vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   background-image: url("http://i64.tinypic.com/j7swhf.jpg");
-  background-position: 0 20%;
+  background-position: 40% 26%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px #111;
+}
+
+#title {
+  border: 0 solid white;
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #111;
+  display: inline-flex;
+  padding: 20px 10vh 20px 10vh;
 }
 
 .linkBar {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-around;
   flex: 1 6 100%;
-  width: 100%;
-  height: 4vh;
+  width: 5vh;
+  height: 28vh;
   position: fixed;
-  top: 28vh;
-  left: 0;
+  top: 0;
+  right: 0;
   z-index: 1;
-  /* background-color: #111; */
-  background: -moz-linear-gradient(top, rgba(43,42,48,1) 0%, rgba(0,1,17,1) 50%, rgba(43,42,48,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(43,42,48,1) 0%,rgba(0,1,17,1) 50%,rgba(43,42,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a30', endColorstr='#2b2a30',GradientType=0 ); /* IE6-9 */
 }
 
 /* Define the flexbox layout of the .main part, which includes the 3 sections */
@@ -87,7 +95,6 @@ p {
   flex-wrap: nowrap;
 }
 
-/* Main > [...] aren't doing anything right now */
 /* Defining the flexbox layout of the left section */
 .main > .leftSidenav {
   border: 0 solid #85c272;
@@ -114,11 +121,11 @@ p {
     height: 500%;
     width: 80%; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
-    top: 32vh;
+    top: 0;
     left: 0;
     background-color: #78928D;
-    padding-top: 5%;
-    transition: 4s;
+    padding-top: 26vh;
+    transition: 3s;
 }
 
 /* The middle navigation menu */
@@ -126,11 +133,12 @@ p {
     height: 500%;
     width: 80%; /* 0 width - change this with JavaScript */
     position: absolute; /* fixed > Stay in place */
-    top: 32vh;
+    top: 0;
     left: 33%;
     background-color: #5b6e6a;
-    padding-top: 5%;
-    transition: 4s;
+    padding-top: 26vh;
+    transition: 3s;
+    box-shadow: 2px 2px 5px #111;
   }
 
 /* The right navigation menu */
@@ -138,28 +146,21 @@ p {
     height: 500%;
     width: 80%; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
-    top: 32vh;
+    top: 0;
     left: 67%;
     background-color: #4a5956;
-    padding-top: 5%;
-    transition: 4s;
+    padding-top: 26vh;
+    transition: 3s;
+    box-shadow: 2px 2px 5px #111;
 }
 
-.linkBar {
-  display: inline-flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: space-around;
-}
-
-
-.fcc, .codepen, .github, .email, .codewars, .linkedin, .twitter {
+.fcc, .codepen, .github, .codewars, .linkedin, .twitter {
   border-radius: 20px 20px 20px 20px;
   padding: 1px;
   margin: 2px;
-  height: 3vh;
-  width: 3vh;
+  height: 4vh;
+  width: 4vh;
+  opacity: 0.9;
 }
 
 .fcc {
@@ -171,7 +172,7 @@ p {
 .codepen {
   background-color: #fff;
   background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
-  background-size: 140% auto;
+  background-size: 150% auto;
   background-position: 50% 50%;
 }
 
@@ -182,12 +183,19 @@ p {
 }
 
 .email {
+  border: 0 solid white;
   background-image: url("http://www.freeiconspng.com/uploads/email-icon--clipart-best-22.png");
   background-size: 145% auto;
   background-position: 50% 50%;
+  padding: 0;
+  margin: 0;
+  height: 4vh;
+  width: 4vh;
+  opacity: 0.9;
 }
 
 .codewars {
+  background-color: #111;
   background-image: url("https://avatars0.githubusercontent.com/u/5387632?v=3&s=280");
   background-size: 125% auto;
   background-position: 50% 50%;
@@ -231,11 +239,11 @@ p {
   flex-wrap: nowrap;
 }
 
-.content {
+.timeline .content {
   border: 1px solid red;
   color: #fff;
   display: flex;
-  flexflow: row;
+  flex-flow: row;
   flex-wrap: nowrap;
   width: 100%;
   min-height: 200px;
@@ -243,7 +251,9 @@ p {
 }
 
 .timeline .image {
-  border: 1px solid #000;
+  /* display: inline-block; */
+  /* items-align: center;
+  content-align: center; */
   text-align: left;
   padding: 0px 0px 40px 0px;
 }
@@ -312,4 +322,47 @@ p {
   /*image by White & Case Stockholm */
   background-size: 200% auto;
   background-position: 50% 50%;
+}
+
+.community {
+  border: 0 solid black;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+
+.community .content {
+  border: 1px solid red;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 200px;
+  margin: 0 5% 0 5%;
+}
+
+.community .image {
+  border: 1px solid black;
+  /* display: inline-block;
+  text-align: left; */
+  width: 100%;
+  height: 40%;
+  padding: 0px 0px 40px 0px;
+}
+
+.community .text {
+  border: 1px solid purple;
+  display: inline-block;
+  width: auto;
+  height: 60%;
+}
+
+.imageCodebar {
+  border: 1px solid white;
+  width: 100vh;
+  height: 30vh;
+  background-image: url("https://pbs.twimg.com/media/CoZNurSXgAEPR0S.jpg");
+  background-size: 100%;
+  background-position: 0 50%;
 }
