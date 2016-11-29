@@ -37,6 +37,11 @@ h3 {
   text-align: center;
 }
 
+.community h3 {
+  padding: 0 10% 0 10%;
+  font-size: 24px;
+}
+
 p {
   border: 0 solid black;
   color: #fff;
@@ -229,7 +234,7 @@ p {
   position: relative;
   top: 0;
   left: 0;
-  transition: 4s;
+  transition: 3s;
 }
 
 .timeline {
@@ -245,21 +250,18 @@ p {
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 90%;
   min-height: 200px;
   margin: 0 5% 0 5%;
 }
 
 .timeline .image {
-  /* display: inline-block; */
-  /* items-align: center;
-  content-align: center; */
   text-align: left;
   padding: 0px 0px 40px 0px;
 }
 
 .timeline .text {
-  border: 1px solid purple;
+  border: 2px solid purple;
   display: inline-block;
   width: auto;
 }
@@ -325,44 +327,68 @@ p {
 }
 
 .community {
-  border: 0 solid black;
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
+  border: 0px solid black;
 }
 
 .community .content {
   border: 1px solid red;
   color: #fff;
-  display: flex;
+  display: flex-inline;
   flex-flow: column;
-  flex-wrap: nowrap;
-  width: 100%;
+  width: 90%;
   min-height: 200px;
   margin: 0 5% 0 5%;
 }
 
 .community .image {
-  border: 1px solid black;
-  /* display: inline-block;
-  text-align: left; */
+  padding: 0px 0px 0px 0px;
+  border: 0px solid blue;
   width: 100%;
   height: 40%;
-  padding: 0px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .community .text {
-  border: 1px solid purple;
+  border: 1px solid white;
   display: inline-block;
-  width: auto;
+  width: 100%;
   height: 60%;
 }
 
+
 .imageCodebar {
-  border: 1px solid white;
-  width: 100vh;
-  height: 30vh;
-  background-image: url("https://pbs.twimg.com/media/CoZNurSXgAEPR0S.jpg");
-  background-size: 100%;
-  background-position: 0 50%;
+  border-radius: 25vh;
+  box-shadow: 2px 2px 5px #111;
+  width: 40vh;
+  height: 40vh;
+  background-image: url("http://www.siliconsouth.org.uk/wp-content/uploads/2016/01/round-logo-1.png");
+  background-size: 110%;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+#rightSidenav img {
+  border: 2px solid white;
+  border-radius: 25vh;
+  box-shadow: 2px 2px 5px #111;
+  width: 40vh;
+  height: 40vh;
+  margin: 0 5% 5% 5%;
+  float: right;
+}
+
+.org {
+  border: 0px solid green;
+  text-align: left;
+  padding: 0px 0px 40px 0px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
