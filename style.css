@@ -8,8 +8,9 @@ body {
 }
 
 #wrapper {
-  position: relative;
+  position: fixed;
   overflow-x: hidden;
+  overflow-y: scroll !important;
 }
 
 footer {
