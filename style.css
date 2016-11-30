@@ -10,6 +10,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: #fff;
   background-color: #4a5956;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 footer {
