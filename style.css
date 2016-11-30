@@ -8,7 +8,7 @@ body {
 }
 
 #wrapper {
-  position: absolute;
+  position: relative;
   overflow-x: hidden;
 }
 
