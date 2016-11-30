@@ -1,14 +1,14 @@
 /* Define basic properties of the page */
-html {
-  overflow-x: hidden;
-}
-
 body {
   width: 100%;
   margin: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
   background-color: #4a5956;
+}
+
+#wrapper {
+  overflow-x: hidden;
 }
 
 footer {
