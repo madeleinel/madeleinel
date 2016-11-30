@@ -103,7 +103,7 @@ a {
   left: 0;
   background-color: #78928D;
   padding-top: 26vh;
-  transition: 2s;
+  transition: 500ms;
 }
 
 #sectionMiddle {
@@ -114,7 +114,7 @@ a {
   background-color: #5b6e6a;
   box-shadow: 2px 2px 5px #111;
   padding-top: 26vh;
-  transition: 2s;
+  transition: 500ms;
 }
 
 #sectionRight {
@@ -125,14 +125,14 @@ a {
   background-color: #4a5956;
   box-shadow: 20px 0px 0px #4a5956, 2px 2px 5px #111;
   padding-top: 26vh;
-  transition: 2s;
+  transition: 500ms;
 }
 
 #titleLeft, #titleMiddle, #titleRight {
   position: relative;
   top: 0;
   left: 0;
-  transition: 2s;
+  transition: 500ms;
 }
 
 /* Define the layout of the left content section (About) */
