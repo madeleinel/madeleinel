@@ -1,9 +1,4 @@
 /* Define basic properties of the page */
-
-html, body {
-  overflow-x: hidden;
-}
-
 body {
   width: 100%;
   margin: 0;
