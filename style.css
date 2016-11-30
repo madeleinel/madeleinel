@@ -8,7 +8,6 @@ body {
 }
 
 #wrapper {
-  position: fixed;
   overflow-x: hidden;
   overflow-y: scroll !important;
 }
