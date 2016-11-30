@@ -167,9 +167,9 @@ a {
 }
 
 #about .profileLink {
-  height: 15vh;
-  width: 15vh;
-  border-radius: 10vh;
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
 }
 
 /* Define look of each link button (6) */
