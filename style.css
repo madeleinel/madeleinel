@@ -113,7 +113,8 @@ a {
   top: 0;
   left: 67%;
   background-color: #4a5956;
-  box-shadow: 2px 2px 5px #111;
+/*   box-shadow: 2px 2px 5px #111; */
+  box-shadow: -6px 2px 5px #111;
   padding-top: 26vh;
   transition: 2s;
 }
