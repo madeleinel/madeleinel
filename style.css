@@ -71,7 +71,7 @@ a {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("http://i64.tinypic.com/j7swhf.jpg");
+  background-image: url("images/top-image.png");
   background-position: 40% 26%;
   box-shadow: 0 2px 5px #111;
   display: flex;
@@ -90,6 +90,7 @@ a {
 
 #main {
   width: 100vh;
+
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
