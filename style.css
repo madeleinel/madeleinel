@@ -134,7 +134,7 @@ a {
 /* Media query for portrait screen layout */
 
 @media only screen
-  and (orientation: landscape) {
+  and (orientation: portrait) {
     #sectionLeft, #sectionMiddle, #sectionRight {
       min-height: 2800px;
     }
