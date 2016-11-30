@@ -148,7 +148,7 @@ a {
 #aboutIntro img {
   margin: 0 5% 5% 5%;
   float: left;
-  height: 40vh;
+  height: 240px;
   box-shadow: 2px 2px 5px #111;
 }
 
@@ -164,6 +164,7 @@ a {
 #aboutPhotos img {
   width: 30%;
   max-width: 200px;
+  max-height: 150px;
   box-shadow: 2px 2px 5px #111;
 }
 
@@ -177,9 +178,9 @@ a {
 }
 
 #about .profileLink {
-  height: 90px;
-  width: 90px;
-  border-radius: 45px;
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
 }
 
 /* Define look of each link button (6) */
@@ -318,5 +319,5 @@ a {
 
 #communityIntro {
   text-align: center;
-  padding: 5px 20px 20px 20px;
+  padding: 0px 20% 5% 20%;
 }
