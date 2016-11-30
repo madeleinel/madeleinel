@@ -194,27 +194,27 @@ a {
 }
 
 #codepen {
-  background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
+  background-image: url("images/codepen-logo.png");
   background-color: #fff;
   background-size: 150% auto;
   background-position: 50% 50%;
 }
 
 #github {
-  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+  background-image: url("images/github-logo.png");
   background-size: 120% auto;
   background-position: 51% 54%;
 }
 
 #codewars {
   background-color: #111;
-  background-image: url("https://avatars0.githubusercontent.com/u/5387632?v=3&s=280");
+  background-image: url("images/codewars-logo.png");
   background-size: 125% auto;
   background-position: 50% 50%;
 }
 
 #linkedin {
-  background-image: url("https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png");
+  background-image: url("images/linkedin-logo.png");
   background-color: #fff;
   background-size: 120% auto;
   background-position: 52% 52%;
@@ -222,7 +222,7 @@ a {
 
 #twitter {
   background-color: #fff;
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png");
+  background-image: url("images/twitter-logo.png");
   background-size: 80% auto;
   background-position: 52% 52%;
   background-repeat: no-repeat;
