@@ -1,15 +1,12 @@
 /* Define basic properties of the page */
 body {
   width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
   margin: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
   background-color: #4a5956;
-}
-
-#wrapper {
-  overflow-x: hidden;
-  overflow-y: scroll !important;
 }
 
 footer {
