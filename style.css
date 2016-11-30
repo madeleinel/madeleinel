@@ -139,7 +139,7 @@ a {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     #sectionLeft, #sectionMiddle, #sectionRight {
-      min-height: 2900px;
+      min-height: 3000px;
     }
 }
 
@@ -149,7 +149,7 @@ a {
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     #sectionLeft, #sectionMiddle, #sectionRight {
-      min-height: 2600px;
+      min-height: 2500px;
     }
 }
 
