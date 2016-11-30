@@ -1,18 +1,11 @@
 /* Define basic properties of the page */
-/* html, body {
-  overflow-x: hidden !important;
-} */
-
 body {
   width: 100%;
-  overflow-x: hidden;
   margin: 0;
+  overflow-x: hidden;
   font-family: "Raleway", sans-serif;
   color: #fff;
   background-color: #4a5956;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 footer {
