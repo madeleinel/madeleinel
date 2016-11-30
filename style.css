@@ -99,7 +99,7 @@ a {
 #sectionLeft {
   position: absolute;
   width: 80%;
-  min-height: 2400px;
+  min-height: 2350px;
   top: 0;
   left: 0;
   background-color: #78928D;
@@ -110,7 +110,7 @@ a {
 #sectionMiddle {
   position: absolute;
   width: 80%;
-  min-height: 2400px;
+  min-height: 2350px;
   top: 0;
   left: 33%;
   background-color: #5b6e6a;
@@ -122,7 +122,7 @@ a {
 #sectionRight {
   position: absolute;
   width: 80%;
-  min-height: 2400px;
+  min-height: 2350px;
   top: 0;
   left: 67%;
   background-color: #4a5956;
@@ -136,7 +136,7 @@ a {
 @media only screen
   and (orientation: portrait) {
     #sectionLeft, #sectionMiddle, #sectionRight {
-      min-height: 2800px;
+      min-height: 2600px;
     }
 }
 
