@@ -24,8 +24,3 @@ document.getElementById("titleLeft").style.left = "0";
 document.getElementById("titleMiddle").style.left = "0";
 document.getElementById("titleRight").style.left = "40%";
 }
-
-$('html, body').css({
-    overflow-x: 'hidden',
-    height: '100%'
-});
