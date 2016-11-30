@@ -1,4 +1,8 @@
 /* Define basic properties of the page */
+html {
+  overflow-x: hidden;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -83,7 +87,6 @@ a {
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
-  overflow-x: hidden;
 }
 
 #sectionLeft {
