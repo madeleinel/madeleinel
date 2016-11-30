@@ -29,7 +29,6 @@ h1 {        /* Title for each content section */
 }
 
 h2 {
-  border: 0px solid blue;
   font-size: 20px;
   text-align: center;
   padding: 0 5% 0 5%;
@@ -37,7 +36,6 @@ h2 {
 }
 
 p {
-  border: 0px solid blue;
   text-align: left;
   padding: 2% 2% 0% 5%;
 }
@@ -130,12 +128,10 @@ a {
 /* Define the layout of the left content section (About) */
 
 #about {
-  border: 1px solid black;
   margin: 5% 0 10% 0;
 }
 
 #about #aboutIntro {
-  border: 1px solid yellow;
   margin: 0 0 5% 0;
 }
 
@@ -147,7 +143,6 @@ a {
 }
 
 #about #aboutPhotos {
-  border: 1px solid orange;
   width: 90%;
   display: flex;
   flex-flow: row;
@@ -163,7 +158,6 @@ a {
 }
 
 #about #linkBar {
-  border: 0px solid purple;
   width: 90%;
   display: flex;
   flex-flow: row;
@@ -173,7 +167,6 @@ a {
 }
 
 #about .title {
-  border: 0px solid orange;
   width: 80%;
   margin: 0 0 0 15%;
 }
@@ -238,22 +231,18 @@ a {
 }
 
 #geography .content {    /* Each individual country section */
-  border: 1px solid black;
   width: 90%;
   margin: 5% 5% 0 5%;
   display: flex;
   flex-flow: row;
   align-content: flex-start;
-  border-bottom: 1px solid #fff;
 }
 
 #geography .country {
-  border: 1px solid orange;
   width: 30%;
 }
 
 #geography .text {
-  border: 1px solid purple;
   width: 70%;
   padding: 10px 0 10px 0;
 }
@@ -286,7 +275,6 @@ a {
 }
 
 #community .content {
-  border: 1px solid black;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -295,11 +283,9 @@ a {
 }
 
 #community .text {
-  border: 1px solid yellow;
 }
 
 #community .org {
-  border: 1px solid orange;
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
