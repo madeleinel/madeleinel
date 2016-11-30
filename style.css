@@ -1,222 +1,113 @@
-footer {
-  height: 20px;
+/* Define basic properties of the page */
+body {
   width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 12px;
-  padding: 4px 0 0px;
-  text-align: center;
+}
+
+footer {
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1;
+  height: 20px;
+  width: 100%;
+  padding: 4px 0 0 0;
+  font-size: 12px;
+  text-align: center;
   background-color: rgba(17, 1, 0, 0.9);
-  display: inline-flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  margin: 0;
-  overflow-x: hidden;
+h1 {        /* Title for each content section */
+  font-size: 24px;
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  padding: 0 40px 20px;
 }
 
 h2 {
-  display: inline-block;
-  color: #fff;
-  padding: 0 40px 20px;
-  border-bottom: 2px solid #fff;
-}
-
-h3 {
-  border: 1px solid blue;
-  display: inline-block;
-  padding: 0 0 0 10%;
+  border: 0px solid blue;
+  font-size: 20px;
   text-align: center;
-}
-
-.community h3 {
-  padding: 0 10% 0 10%;
-  font-size: 24px;
+  padding: 0 5% 0 5%;
+  display: inline-block;
 }
 
 p {
-  border: 0 solid black;
-  color: #fff;
   text-align: left;
-  padding: 0 5% 10% 5%;
+  padding: 2% 5% 0% 5%;
 }
 
-.top {
-  flex: 1 6 100%;
-  width: 100%;
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Define each of the main sections; top part, main part and each content section */
+#top {
   height: 20vh;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   background-image: url("http://i64.tinypic.com/j7swhf.jpg");
   background-position: 40% 26%;
+  box-shadow: 0 2px 5px #111;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 5px #111;
 }
 
-#title {
-  border: 0 solid white;
+#topTitle {
   color: #fff;
   font-size: 36px;
   letter-spacing: 2px;
   word-spacing: 8px;
   font-weight: bold;
   text-shadow: 1px 1px 4px #111;
-  display: inline-flex;
-  padding: 20px 10vh 20px 10vh;
 }
 
-.linkBar {
-  display: inline-flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: space-around;
-  flex: 1 6 100%;
-  width: 28vh;
-  height: 3vh;
-  position: fixed;
-  top: 16vh;
-  right: 0;
-  z-index: 1;
-}
-
-/* Define the flexbox layout of the .main part, which includes the 3 sections */
-.main {
+#main {
   width: 100vh;
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
 }
 
-/* Main > [...] aren't doing anything right now */
-/* Defining the flexbox layout of the left section */
-.main > .leftSidenav {
-  border: 0 solid #85c272;
-  flex: 1 6 10%;
-  order: 1;
+#sectionLeft {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 0;
+  background-color: #78928D;
+  padding-top: 26vh;
+  transition: 3s;
 }
 
-/* Defining the flexbox layout of the middle section */
-.main > .middleSidenav {
-  border: 0 solid #52903e;
-  flex: 1 6 10%;
-  order: 2;
-}
-
-/* Defining the flexbox layout of the right section */
-.main > .rightSidenav {
-  border: 0 solid #29491f;
-  flex: 1 6 10%;
-  order: 3;
-}
-
-/* The left navigation menu */
-.leftSidenav {
-    height: 500%;
-    width: 80%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #78928D;
-    padding-top: 26vh;
-    transition: 3s;
-}
-
-/* The middle navigation menu */
-.middleSidenav {
-    height: 500%;
-    width: 80%;
-    position: absolute;
-    top: 0;
-    left: 33%;
-    background-color: #5b6e6a;
-    padding-top: 26vh;
-    transition: 3s;
-    box-shadow: 2px 2px 5px #111;
-  }
-
-/* The right navigation menu */
-.rightSidenav {
-    height: 500%;
-    width: 80%;
-    position: absolute;
-    top: 0;
-    left: 67%;
-    background-color: #4a5956;
-    padding-top: 26vh;
-    transition: 3s;
-    box-shadow: 2px 2px 5px #111;
-}
-
-.fcc, .codepen, .github, .codewars, .linkedin, .twitter {
-  border-radius: 20px 20px 20px 20px;
-  padding: 1px;
-  margin: 2px;
-  height: 3vh;
-  width: 3vh;
-  opacity: 0.9;
-}
-
-.fcc {
-  background-image: url("https://avatars2.githubusercontent.com/u/9892522?v=3&s=400");
-  background-size: 95% auto;
-  background-position: 60% 50%;
-}
-
-.codepen {
-  background-color: #fff;
-  background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
-  background-size: 150% auto;
-  background-position: 50% 50%;
-}
-
-.github {
-  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
-  background-size: 120% auto;
-  background-position: 50% 50%;
-}
-
-.codewars {
-  background-color: #111;
-  background-image: url("https://avatars0.githubusercontent.com/u/5387632?v=3&s=280");
-  background-size: 125% auto;
-  background-position: 50% 50%;
-}
-
-.linkedin {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png");
-  background-size: 90% auto;
-  background-position: 52% 52%;
-}
-
-.twitter {
-  background-color: #fff;
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png");
-  background-size: 80% auto;
-  background-position: 52% 52%;
-  background-repeat: no-repeat;
-}
-
-#leftSidenav img {
-  border-radius: 20px 0px 20px 0px;
-  border: 0px solid blue;
-  height: 40vh;
-  width: auto;
-  margin: 0 5% 5% 5%;
-  float: left;
+#sectionMiddle {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 33%;
+  background-color: #5b6e6a;
   box-shadow: 2px 2px 5px #111;
+  padding-top: 26vh;
+  transition: 3s;
+}
+
+#sectionRight {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 67%;
+  background-color: #4a5956;
+  box-shadow: 2px 2px 5px #111;
+  padding-top: 26vh;
+  transition: 3s;
 }
 
 #titleLeft, #titleMiddle, #titleRight {
@@ -226,193 +117,177 @@ p {
   transition: 3s;
 }
 
-.timeline {
-  border: 0 solid black;
+/* Define the layout of the left content section (About) */
+
+#about {
+  border: 1px solid black;
+  margin: 5% 0 10% 0;
+}
+
+#about img {
+  margin: 0 5% 5% 5%;
+  float: left;
+  height: 40vh;
+  box-shadow: 2px 2px 5px #111;
+}
+
+#about #linkBar {
+  border: 0px solid purple;
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5% 5% 5%;
+}
+
+#about .title {
+  border: 0px solid blue;
+  border-bottom: 1px solid #fff;
+  width: 80%;
+  margin: 0px 0px 5% 5%;
+  padding: 0 0 0 10%;
+}
+
+#about .profileLink {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 10vh;
+}
+
+/* Define look of each link button (6) */
+/* As these are links, images are set as backgrounds in order to make entire button clickable */
+
+#fcc {
+  background-image: url("https://avatars2.githubusercontent.com/u/9892522?v=3&s=400");
+  background-size: 95% auto;
+  background-position: 60% 50%;
+}
+
+#codepen {
+  background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
+  background-color: #fff;
+  background-size: 150% auto;
+  background-position: 50% 50%;
+}
+
+#github {
+  background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+  background-size: 120% auto;
+  background-position: 50% 50%;
+}
+
+#codewars {
+  background-color: #111;
+  background-image: url("https://avatars0.githubusercontent.com/u/5387632?v=3&s=280");
+  background-size: 125% auto;
+  background-position: 50% 50%;
+}
+
+#linkedin {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png");
+  background-size: 90% auto;
+  background-position: 52% 52%;
+}
+
+#twitter {
+  background-color: #fff;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png");
+  background-size: 80% auto;
+  background-position: 52% 52%;
+  background-repeat: no-repeat;
+}
+
+/* Define the layout of the middle content section (Geography) */
+
+#geography {
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
+  margin: 0 0 10% 0;
 }
 
-.timeline .content {
-  border: 1px solid red;
-  color: #fff;
+#geography .content {    /* Each individual country section */
+  border: 1px solid black;
+  width: 90%;
+  margin: 5% 5% 0 5%;
+  display: flex;
+  flex-flow: row;
+  align-content: flex-start;
+  border-bottom: 1px solid #fff;
+}
+
+#geography .country {
+  border: 1px solid orange;
+  width: 30%;
+}
+
+#geography .text {
+  border: 1px solid purple;
+  width: 70%;
+  padding: 10px 0 10px 0;
+}
+
+/* Define the look of the images within the middle section */
+
+#geography img {    /* each individual image */
+  width: 98%;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 5px #111;
+  margin: 0 0 10px 0;
+}
+
+#uk img, #usa img {
+  border-radius: 55% 12% 55% 12%;
+  margin: 0 20px 10px 0;
+}
+
+#sweden1 img, #sweden2 img {
+  border-radius: 12% 55% 12% 55%;
+}
+
+/* Define the layout of the right content section (Community) */
+
+#community {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 5% 5% 10% 5%;
+}
+
+#community .content {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 0 0 10% 0;
+  padding: 0 0 5% 0;
+  border-bottom: 1px solid #fff;
+}
+
+#community .org {
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
-  width: 90%;
-  min-height: 200px;
-  margin: 0 5% 0 5%;
-}
-
-.timeline .image {
-  text-align: left;
-  padding: 0px 0px 40px 0px;
-}
-
-.timeline .text {
-  border: 2px solid purple;
-  display: inline-block;
-  width: auto;
-}
-
-.city {
-  border: 2px solid #fff;
-  border-radius: 125px 25px 125px 25px;
-  padding: 20px;
-  margin: 0 20px 10px 0;
-  background-color: #8498ad;
-  height: 200px;
-  width: 200px;
-  box-shadow: 2px 2px 5px #111;
-  background-repeat: no-repeat;
-}
-
-#london2 {
-  background-image: url("http://cdn.ek.aero/english/images/London_tcm233-2438088.jpg");
-  background-size: 280% auto;
-  background-position: 14% 50%;
-}
-
-#brighton {
-  background-image: url("http://www.samedaycouriers.org/wp-content/uploads/2016/02/brighton1.jpg");
-  /*image by */
-  background-size: 160% auto;
-  background-position: 50% 50%;
-}
-
-#london1 {
-  background-image: url("http://www.alumni.ucdavis.edu/local_resources/images/benefits/travel/2017/london-and-environs/london%202.jpg");
-  /*image by */
-  background-size: 150% auto;
-  background-position: 45% 50%;
-}
-
-#linkoping {
-  background-image: url("http://www.student.liu.se/exchange/what-s-on-in-norrkoping/1.487559/nkpg.jpg");
-  /*image by */
-  background-size: 200% auto;
-  background-position: 40% 100%;
-}
-
-#stockholm2 {
-  background-image: url("http://blog.secretescapes.com/wp-content/uploads/2015/07/stockholm.jpg");
-  /*image by */
-  background-size: 150% auto;
-  background-position: 50% 50%;
-}
-
-#cincinnati {
-  background-image: url("http://s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg?1427320933");
-  /*image by */
-  background-size: 240% auto;
-  background-position: 50% 50%;
-}
-
-#stockholm1 {
-  background-image: url("http://www.whitecase.com/sites/whitecase/files/images/locations/Stockholm_Sweden_Tablet_1920x960.jpg");
-  /*image by White & Case Stockholm */
-  background-size: 200% auto;
-  background-position: 50% 50%;
-}
-
-.community {
-  display: flex;
-  flex-flow: column;
-  flex-wrap: nowrap;
-  border: 0px solid black;
-}
-
-.community .content {
-  border: 0px solid red;
-  color: #fff;
-  display: inline-block;
-  flex-flow: column;
-  width: 90%;
-  min-height: 200px;
-  margin: 0 5% 0 5%;
-}
-
-.community .image {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.community .text {
-  border-bottom: 1px solid white;
-  display: inline-block;
-  width: 100%;
-  height: 60%;
-  margin: 0 0 20px 0;
-}
-
-.community p {
-  padding: 20px 0 10px 0px;
-}
-
-.imageCodebar {
-  border-radius: 25vh;
+#community img {    /* each individual image */
+  width: 20%;
+  border-radius: 50%;
   box-shadow: 2px 2px 5px #111;
-  width: 30vh;
-  height: 30vh;
-  background-image: url("http://www.siliconsouth.org.uk/wp-content/uploads/2016/01/round-logo-1.png");
-  background-size: 110%;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-}
-
-.imageNodeGirls {
-  border-radius: 25vh;
-  box-shadow: 2px 2px 5px #111;
-  width: 30vh;
-  height: 30vh;
-  background-image: url("https://avatars2.githubusercontent.com/u/13981928?v=3&s=200");
+  margin: 0 20px 0 0;
   background-color: #fff;
-  background-size: 90%;
-  background-position: 40% 50%;
-  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+  top: 0;
+  left: 20%;
 }
 
-.imageFac {
-  border-radius: 25vh;
-  box-shadow: 2px 2px 5px #111;
-  width: 30vh;
-  height: 30vh;
-  background-image: url("https://pbs.twimg.com/profile_images/534123785817829376/UE8T_TQF_400x400.png");
-  background-color: #fff;
-  background-size: 70%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.imageCfg {
-  border-radius: 25vh;
-  box-shadow: 2px 2px 5px #111;
-  width: 30vh;
-  height: 30vh;
-  background-image: url("https://pbs.twimg.com/profile_images/572786721922629632/XI4-Cw-n_400x400.png");
-  background-color: #fff;
-  background-size: 80%;
-  background-position: 50% 60%;
-  background-repeat: no-repeat;
-}
-
-#rightSidenav img {
-  border: 0px solid white;
-  border: 2px solid white;
-  border-radius: 50vh;
-  width: 40%;
-  height: 40%;
-  margin: 0 5% 5% 5%;
-  float: right;
-}
-
-.org {
-  border: 0px solid green;
-  text-align: left;
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
+#community .title {
+  position: relative;
+  top: 0;
+  left: 25%;
+  padding: 10px 10px 10px 10px;
 }
