@@ -136,7 +136,7 @@ a {
 @media only screen
   and (orientation: portrait) {
     #sectionLeft, #sectionMiddle, #sectionRight {
-      min-height: 2600px;
+      min-height: 2700px;
     }
 }
 
