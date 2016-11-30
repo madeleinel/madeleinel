@@ -1,6 +1,5 @@
 /* Define basic properties of the page */
 html, body {
-  max-width: 100%;
   overflow-x: hidden !important;
 }
 
