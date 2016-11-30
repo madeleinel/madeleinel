@@ -188,7 +188,7 @@ a {
 /* As these are links, images are set as backgrounds in order to make entire button clickable */
 
 #fcc {
-  background-image: url("https://avatars2.githubusercontent.com/u/9892522?v=3&s=400");
+  background-image: url("images/fcc-logo.png");
   background-size: 95% auto;
   background-position: 60% 50%;
 }
