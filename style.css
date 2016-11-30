@@ -29,6 +29,7 @@ h1 {        /* Title for each content section */
 }
 
 h2 {
+  border: 0px solid blue;
   font-size: 20px;
   text-align: center;
   padding: 0 5% 0 5%;
@@ -36,14 +37,23 @@ h2 {
 }
 
 p {
+  border: 0px solid blue;
   text-align: left;
-  padding: 2% 5% 0% 5%;
+  padding: 2% 2% 0% 5%;
 }
 
 a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Flat div to be placed between text sections as a border */
+
+.border {
+  border-bottom: 2px solid #fff;
+  width: 70%;
+  margin: 0 15% 5% 15%;
 }
 
 /* Define each of the main sections; top part, main part and each content section */
@@ -120,17 +130,40 @@ a {
 /* Define the layout of the left content section (About) */
 
 #about {
+  border: 1px solid black;
   margin: 5% 0 10% 0;
 }
 
-#about img {
+#about #aboutIntro {
+  border: 1px solid yellow;
+  margin: 0 0 5% 0;
+}
+
+#about #aboutIntro img {
   margin: 0 5% 5% 5%;
   float: left;
   height: 40vh;
   box-shadow: 2px 2px 5px #111;
 }
 
+#about #aboutPhotos {
+  border: 1px solid orange;
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5% 0% 5%;
+}
+
+#about #aboutPhotos img {
+  margin: 0 0% 0% 0%;
+  width: 25%;
+  box-shadow: 2px 2px 5px #111;
+}
+
 #about #linkBar {
+  border: 0px solid purple;
   width: 90%;
   display: flex;
   flex-flow: row;
@@ -140,10 +173,9 @@ a {
 }
 
 #about .title {
-  border-bottom: 1px solid #fff;
+  border: 0px solid orange;
   width: 80%;
-  margin: 0px 0px 5% 5%;
-  padding: 0 0 0 10%;
+  margin: 0 0 0 15%;
 }
 
 #about .profileLink {
@@ -171,7 +203,7 @@ a {
 #github {
   background-image: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
   background-size: 120% auto;
-  background-position: 50% 50%;
+  background-position: 51% 54%;
 }
 
 #codewars {
@@ -182,8 +214,9 @@ a {
 }
 
 #linkedin {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png");
-  background-size: 90% auto;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png");
+  background-color: #fff;
+  background-size: 120% auto;
   background-position: 52% 52%;
 }
 
@@ -205,6 +238,7 @@ a {
 }
 
 #geography .content {    /* Each individual country section */
+  border: 1px solid black;
   width: 90%;
   margin: 5% 5% 0 5%;
   display: flex;
@@ -214,10 +248,12 @@ a {
 }
 
 #geography .country {
+  border: 1px solid orange;
   width: 30%;
 }
 
 #geography .text {
+  border: 1px solid purple;
   width: 70%;
   padding: 10px 0 10px 0;
 }
@@ -250,16 +286,20 @@ a {
 }
 
 #community .content {
+  border: 1px solid black;
   width: 100%;
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
-  margin: 0 0 10% 0;
   padding: 0 0 5% 0;
-  border-bottom: 1px solid #fff;
+}
+
+#community .text {
+  border: 1px solid yellow;
 }
 
 #community .org {
+  border: 1px solid orange;
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
@@ -276,12 +316,17 @@ a {
   object-position: 50% 50%;
   position: relative;
   top: 0;
-  left: 20%;
+  left: 30%;
 }
 
 #community .title {
   position: relative;
   top: 0;
-  left: 25%;
-  padding: 10px 10px 10px 10px;
+  left: 35%;
+  padding: 10px 20px 10px 20px;
+}
+
+#community #communityIntro {
+  text-align: center;
+  padding: 5px 20px 20px 20px;
 }
