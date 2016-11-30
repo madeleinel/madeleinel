@@ -287,14 +287,12 @@ a {
   padding: 0 0 5% 0;
 }
 
-#community .text {
-}
-
 #community .org {
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
   align-items: center;
+  margin: 0 0 2% 0;
 }
 
 #community img {    /* each individual image */
