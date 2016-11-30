@@ -4,9 +4,8 @@
 } */
 
 body {
-  max-width: 100vh;
-  /* height: 100%; */
-  overflow-x: hidden !important;
+  max-width: 100%;
+/*  overflow-x: hidden /* !important */
   margin: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -89,6 +88,7 @@ a {
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
+  overflow-x: hidden /* !important */;
 }
 
 #sectionLeft {
