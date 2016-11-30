@@ -131,6 +131,15 @@ a {
   transition: 500ms;
 }
 
+/* Media query for portrait screen layout */
+
+@media only screen
+  and (orientation: landscape) {
+    #sectionLeft, #sectionMiddle, #sectionRight {
+      min-height: 2800px;
+    }
+}
+
 #titleLeft, #titleMiddle, #titleRight {
   position: relative;
   top: 0;
