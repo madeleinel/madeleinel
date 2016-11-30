@@ -133,10 +133,23 @@ a {
 
 /* Media query for portrait screen layout */
 
-@media only screen
+@media only screen  /* for phones */
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     #sectionLeft, #sectionMiddle, #sectionRight {
-      min-height: 2700px;
+      min-height: 2900px;
+    }
+}
+
+@media only screen  /* for tablets */
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #sectionLeft, #sectionMiddle, #sectionRight {
+      min-height: 2600px;
     }
 }
 
