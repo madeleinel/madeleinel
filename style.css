@@ -4,7 +4,7 @@
 } */
 
 body {
-  max-width: 100%;
+  /* max-width: 100%; */
   overflow-x: hidden;
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -84,7 +84,7 @@ a {
 }
 
 #main {
-  width: 100%;
+  width: 100vh;
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
