@@ -1,0 +1,346 @@
+/* Define basic properties of the page */
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background-color: #4a5956;
+}
+
+/* Set an overlay over the whole window, to hide content outside of the window (for when moving content sections for the side) */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 20px;
+  width: 100%;
+  padding: 4px 0 0 0;
+  font-size: 12px;
+  text-align: center;
+  background-color: #111;
+}
+
+h1 {        /* Title for each content section */
+  font-size: 24px;
+  display: inline-block;
+  border-bottom: 2px solid #fff;
+  padding: 0 40px 20px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 5% 0 5%;
+  display: inline-block;
+}
+
+p {
+  text-align: left;
+  padding: 0 2% 0% 5%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Flat div to be placed between text sections as a border */
+
+.border {
+  border-bottom: 2px solid #fff;
+  width: 70%;
+  margin: 0 15% 5% 15%;
+}
+
+/* Define each of the main sections; top part, main part and each content section */
+#top {
+  height: 20vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("images/top-image.png");
+  background-position: 40% 26%;
+  box-shadow: 0 2px 5px #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#topTitle {
+  color: #fff;
+  font-size: 36px;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #111;
+}
+
+#main {
+  width: 100vh;
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+#sectionLeft {
+  position: absolute;
+  width: 80%;
+  min-height: 2350px;
+  top: 0;
+  left: 0;
+  background-color: #78928D;
+  padding-top: 26vh;
+  transition: 500ms;
+}
+
+#sectionMiddle {
+  position: absolute;
+  width: 80%;
+  min-height: 2350px;
+  top: 0;
+  left: 33%;
+  background-color: #5b6e6a;
+  box-shadow: 2px 2px 5px #111;
+  padding-top: 26vh;
+  transition: 500ms;
+}
+
+#sectionRight {
+  position: absolute;
+  width: 80%;
+  min-height: 2350px;
+  top: 0;
+  left: 67%;
+  background-color: #4a5956;
+  box-shadow: 20px 0px 0px #4a5956, 2px 2px 5px #111;
+  padding-top: 26vh;
+  transition: 500ms;
+}
+
+/* Media query for portrait screen layout */
+
+@media only screen  /* for phones */
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #sectionLeft, #sectionMiddle, #sectionRight {
+      min-height: 3000px;
+    }
+}
+
+@media only screen  /* for tablets */
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #sectionLeft, #sectionMiddle, #sectionRight {
+      min-height: 2500px;
+    }
+}
+
+#titleLeft, #titleMiddle, #titleRight {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 500ms;
+}
+
+/* Define the layout of the left content section (About) */
+
+#about {
+  margin: 5% 0 10% 0;
+}
+
+#aboutIntro {
+  margin: 0 0 5% 0;
+}
+
+#aboutIntro img {
+  margin: 0 5% 5% 5%;
+  float: left;
+  height: 240px;
+  box-shadow: 2px 2px 5px #111;
+}
+
+#aboutPhotos {
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5% 5% 5%;
+}
+
+#aboutPhotos img {
+  width: 30%;
+  max-width: 200px;
+  max-height: 150px;
+  box-shadow: 2px 2px 5px #111;
+}
+
+#linkBar {
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5% 5% 5%;
+}
+
+#about .profileLink {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+}
+
+/* Define look of each link button (6) */
+/* As these are links, images are set as backgrounds in order to make entire button clickable */
+
+#fcc {
+  background-image: url("images/fcc-logo.png");
+  background-size: 95% auto;
+  background-position: 60% 50%;
+}
+
+#codepen {
+  background-image: url("images/codepen-logo.png");
+  background-color: #fff;
+  background-size: 150% auto;
+  background-position: 50% 50%;
+}
+
+#github {
+  background-image: url("images/github-logo.png");
+  background-size: 120% auto;
+  background-position: 51% 54%;
+}
+
+#codewars {
+  background-color: #111;
+  background-image: url("images/codewars-logo.png");
+  background-size: 125% auto;
+  background-position: 50% 50%;
+}
+
+#linkedin {
+  background-image: url("images/linkedin-logo.png");
+  background-color: #fff;
+  background-size: 120% auto;
+  background-position: 52% 52%;
+}
+
+#twitter {
+  background-color: #fff;
+  background-image: url("images/twitter-logo.png");
+  background-size: 80% auto;
+  background-position: 52% 52%;
+  background-repeat: no-repeat;
+}
+
+/* Define the layout of the middle content section (Geography) */
+
+#geography {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 0 0 10% 0;
+}
+
+#geography .content {    /* Each individual country section */
+  width: 90%;
+  margin: 5% 5% 0 5%;
+  display: flex;
+  flex-flow: row;
+  align-content: flex-start;
+}
+
+#geography .country {
+  width: 30%;
+}
+
+#geography .text {
+  width: 70%;
+  padding: 10px 0 10px 0;
+}
+
+/* Define the look of the images within the middle section */
+
+#geography img {    /* each individual image */
+  width: 98%;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 5px #111;
+}
+
+#uk img, #usa img {
+  border-radius: 55% 12% 55% 12%;
+  margin: 0 20px 10px 0;
+}
+
+#sweden1 img, #sweden2 img {
+  border-radius: 12% 55% 12% 55%;
+}
+
+/* Define the layout of the right content section (Community) */
+
+#community {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 5% 5% 10% 5%;
+}
+
+#community .content {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  padding: 0 0 5% 0;
+}
+
+#community .org {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 0 2% 0;
+}
+
+#community img {    /* each individual image */
+  width: 20%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #111;
+  margin: 0 20px 0 0;
+  background-color: #fff;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+  top: 0;
+  left: 30%;
+}
+
+#community .title {
+  position: relative;
+  top: 0;
+  left: 35%;
+  padding: 10px 20px 10px 20px;
+}
+
+#communityIntro {
+  text-align: center;
+  padding: 0px 20% 5% 20%;
+}
